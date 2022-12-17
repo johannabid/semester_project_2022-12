@@ -1,0 +1,632 @@
+/** Global styles **/
+
+@font-face {
+    font-family: "Poetsen One";
+    src: url("/fonts/PoetsenOne-Regular.ttf") format(truetype);
+}
+
+@font-face {
+    font-family:"Inter Regular";
+    src: url("/fonts/Inter-Regular.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url("/fonts/Inter-Bold.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: "Inter Semi Bold";
+    src: url("/fonts/Inter-SemiBold.ttf") format(truetype);
+}
+
+body {
+    margin: 0px;
+    max-width: 100%;
+}
+
+.navigation-box {
+    display: flex;
+    align-items: center;
+}
+
+
+img {
+    height: fit-content;
+    width: fit-content;
+}   
+
+ul li {
+       padding: 5px;
+       margin: 10px;
+}
+
+nav {
+    background: #FBCF0E;
+    width: 500px;
+    padding:25px;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    margin: 15px;
+ }
+
+.activities-specific-page-3 {
+    background: #FBCF0E;
+ }
+
+.exhibitions-3 {
+ margin: 15px;
+}
+
+.exhibitions-2 {
+    display: flex;
+}
+ 
+ ul {
+     list-style: none;
+     padding: 20px;
+     flex-direction: column;
+ }
+
+ .highlighted-text-nav {
+    font-weight: 1000;
+ }
+
+/* HAMBURGER MENU START */ /* https://www.youtube.com/watch?v=kNiic1CaXrQ */
+
+nav, #menu-checkbox { 
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav { 
+    display: block;
+} 
+
+.hamburger-icon {
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+/* HAMBURGER MENU END */
+
+.yellow-background {
+    background: #FBCF0E;
+}
+
+.yellow-background h2 {
+    padding-top: 24px;
+}
+
+.logo-header {
+    align-items: center;
+    display: flex;
+}
+
+.logo-header img {
+  width: 130px;
+  height: auto;
+  margin: 0px 30px 15px;
+
+}
+
+/* HEADER START */
+header {
+    background-color: #E8E8E8;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+}
+
+/** HEADER & HAMBURGER MENU IN MOBILE VIEW **/
+
+@media (min-width: 955px) {
+    
+ nav {
+    display: block;
+     /** INGEN EFFEKT I BROWSER **/
+ }
+
+.hamburger-icon {
+    display: none;
+}
+
+}
+
+@media (max-width:600px) {
+    .logo-header {
+        flex-direction: column;
+    }
+
+   .logo-header h1 {
+    margin-left: 30px;
+    margin-bottom: 10px;
+   }
+}
+
+/* HEADER END*/
+
+/* FOOTER START */
+
+.opening-hours {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.opening-hours-list {
+    flex-direction: column;
+}
+
+.opening-hours-list li {
+    margin-left: 0px;
+    line-height: 30px;
+}
+
+.location-address {
+    margin-left: 95px;
+    padding-top: 60px;
+    flex: 1;
+}
+
+.location-address p {
+    line-height: 18px;
+    margin:0px;
+}
+
+.location-address h4 {
+    padding-bottom: 13px;
+}
+
+.location-address-specific {
+ margin: 0px;
+ padding-top: 20px;
+}
+
+.footer-content { 
+ display: flex;
+ flex: 1;
+}
+
+footer {
+    display: flex;
+    flex: 1;
+    background-color: #FBCF0E;
+    padding: 35px;  
+    gap: 5em;
+
+}
+
+.logo-footer {
+    width: auto;
+    height: 65px;
+    margin-top: 170px;
+    margin-right: 60px;
+}
+
+h4 {
+    margin-bottom: -3px;
+}
+
+@media (max-width:890px) {
+
+    footer {
+        display: block;
+    }
+
+    .location-address {
+        flex: none;
+    }
+
+    .opening-hours-list li {
+        width: 203px;
+    }
+
+}
+
+/* LOGO MÅ VÆRE RESPONSIV */
+@media (max-width:635px) {
+
+    footer {
+        display: block;
+    }
+
+    .location-address {
+        flex: none;
+    }
+
+    .opening-hours-list li {
+        width: 203px;
+    }
+
+    .logo-footer {
+
+    }
+}
+
+/* FOOTER END */
+
+
+h1 {
+    margin-left: 25px;
+    line-height: 1.2em;
+    margin: 0px;
+}
+
+h1, h4, .button a {
+    font-family: "Inter Semi Bold";
+}
+
+p, li, a {
+    font-family: "Inter Regular";
+}
+
+.photo-caption, 
+h2, 
+h3 {
+    font-family: "Poetsen One";
+}
+
+.button,
+.active, 
+.button-infopage,
+.highlighted-text  {
+    font-family: "Inter Bold";
+}
+
+.button, .button-infopage {
+    background-color: #FBCF0E;
+    padding: 5px 15px;
+    border: solid;
+    border-width: 2px;
+    text-align: center;
+    margin: 20px 51px;
+    width: fit-content;
+    margin: auto;
+}
+
+/** Alle overskrifter på desktopsidene, pluss tekst i boks på infosiden **/
+h2 {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    margin-left: 43px;
+    margin-top: 0;
+    padding-top: 20px;
+    width: fit-content;
+}
+
+/** Bildetekst på hjemmeside, aktivitetsside og infoside **/
+h3, .photo-caption {
+    font-size: 20px;
+}
+
+img {
+    width: 100%; /** A GLOBAL STYLE? */
+    border-radius: 10px;
+}
+
+
+
+/** Grønn bakgrunn på hjemmeside med særegen padding-bottom **/
+
+.activities-frontpage, .activities-specific-page {
+    background-color: #3FA752;
+}
+
+.activities-frontpage-2, 
+.activities-specific-page-2, 
+.activities-spesicic-page-2-2 {
+    background-color: #5F74C0;
+}
+
+.activities-spesicic-page-2-2 {
+    display: flex;
+    padding-bottom: 65px;
+}
+
+.activities-spesicic-page-2-2 > * {
+    width: 33%;
+}
+
+.frontpage-activities, 
+.content-wrapper, 
+.activities-specific-page,
+.info_content {
+    display: flex;
+    grid-gap: 2rem;
+    
+}
+
+main .content-wrapper, 
+.activities-frontpage-2, 
+.activities-specific-page,
+.activities-specific-page-1, 
+.activities-specific-page-3 {
+    padding: 20px 20px 40px;
+}
+
+.yellow-background-2,
+.contact-container 
+ {
+    margin-top: 80px;
+}
+ 
+/** 1 - HOMEPAGE START **/
+
+.content-wrapper {
+    display: flex;
+}
+
+.interactive-text {
+    font-size: 15px;
+    display: flex;
+}
+
+.interactive-text p {
+    padding: 55px;
+}
+
+
+
+@media (max-width:850px) {
+    
+    .content-wrapper {
+        flex-direction: column;
+    }
+}
+
+.white-container {
+    background-color: #fff;
+    padding: 50px 200px;
+    text-align: center;
+}
+
+.frontpage-activities div, .content-wrapper div {
+    width: fit-content;
+    margin: auto;
+}
+
+.frontpage-activities img {
+    margin-bottom: 13px;
+}
+
+
+.text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activities-frontpage {
+    padding-bottom: 100px;
+}
+
+/** 1 - HOMEPAGE END **/
+
+/** 2 - ACTIVITIES SPECIFIC PAGE START **/
+
+.exhibitions, .exhibition-section > div, .content-wrapper > *  {
+    flex: 1;
+}
+
+
+.white-container-2 {
+    width: fit-content;
+}
+
+.white-container-2,
+.white-container-3 {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.white-container-activities-page {
+    background-color: #fff;
+    padding: 1px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+
+.white-container-2 > img {
+    aspect-ratio: 2;
+}
+
+.activities_content-2 div {
+    display: flex;
+}
+
+.activities-photo img {
+    aspect-ratio: 2;
+}
+
+div > button {
+    display: flex;
+}
+
+.white-container-activities-page > .button {
+    margin-left: 200px;
+    margin-top:100px;
+}
+
+.activities_content2 {
+display: flex;
+padding-bottom:100px;
+}
+
+.activities_content2 > {
+    flex: 50%;
+}
+
+
+.exhibitions, .activities_content-2 {
+    display: flex;
+}
+
+.exhibition-section { 
+    display: flex;
+    flex: 1;
+}
+
+.exhibitions h2, .yellow-background h2 {
+    flex: 100%;
+}
+
+.exhibitions p {
+    margin-top: 0px;
+}
+
+/** 2 - ACTIVITIES SPECIFIC PAGE END **/
+
+/** 3 - INFO PAGE **/
+
+.info-text {
+    display: flex;
+    padding: 15px 120px;
+    gap: 20rem;
+    
+}
+
+.map {
+    display: flex;
+    padding-left: 50px;
+}
+
+.info-text section {
+    padding: 10px;
+}
+
+.map div {
+    display: flex;
+}
+
+.yellow-background {
+    background-color: #FBCF0E;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 40px;
+    height: fit-content;
+}
+
+.highlighted-text {
+    font-size: 25px; /** REPETERENDE STIL **/
+}
+
+.opening-hours_info-page {
+    width: 418px;
+    flex: 100%;
+    padding-right: 50px;
+}
+
+.info_content {
+    align-items: center;
+}
+
+.info_content > .yellow-background {
+    margin: 0px;
+}
+
+
+.info_content h3 {
+    width: 146px;
+    position: absolute;
+    margin-left: 33px;
+    margin-top: 3px;
+}
+
+
+.info-text > .info-text-1-section  { /** DÅRLIG SKREVET - ENDRE? **/
+    padding-bottom: 40px;
+}
+
+.info-text-1-content {
+    padding-bottom: 13px;
+}
+
+.yellow-background-2 {
+    background-color: #FBCF0E;
+    padding-bottom: 50px;
+}
+
+/** 4 - CONTACT PAGE START **/
+
+.contact-container {
+    background-color: #3FA752;
+}
+
+.contact-container main {
+    position: relative;
+    height: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#message {
+    margin-bottom: 25px;
+}
+
+#message.contact-box {
+    height: 100px;
+}
+
+.contact-box {
+   background-color: #F3F3F3;
+   margin: 5px;
+   width: 385px;
+}
+
+select, .contact-box {
+    margin: 5px;
+    height: 30px;
+}
+
+.contact-form-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+
+.contact-form-content h2 {
+    margin-left: 0px;
+}
+
+.contact-form-specific {
+   max-width: 100%;
+}
+
+@media (max-width: 405px) {
+
+    .contact-form input,
+    select,
+    .contact-form .contact-box {
+       width: fit-content;
+   }
+   
+   textarea#message.contact-box {
+       padding:16px;
+   }
+   
+   select {
+    width: 95%;
+}
+    
+}
+
+
+/** 4 - CONTACT PAGE END **/
+
+
+

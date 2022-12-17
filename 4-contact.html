@@ -9,6 +9,33 @@
     <link href="css/stylesheet.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="contact-container">
+    <main>
+        <div class="contact-form-content">
+            <h2>Contact us</h2>
+        <form class="contact-form" method="POST">
+        
+              <label class="select-contactpage" for="name">I'm asking as a:</label>
+              <select>
+                <option value="Parent">Parent</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Researcher">Researcher</option>
+                <option value="Other">Other</option>
+              </select>
+              <label for="name">Name</label>
+               <input class="contact-box" type="text" id="name" name="name">
+              <label for="email">Email</label>
+               <input class="contact-box" type="email" id="email" name="email">
+              <label for="text">Topic</label>
+               <input class="contact-box" type="text" id="text" name="text">
+              <label for="message">Message</label>
+              <textarea class="contact-box" id="message" name="message"></textarea>
+              
+               <input class="button" type="submit" value="Send"> 
+        
+        </form>
+        </div>
+    </main>
+    </div>
 </body>
 </html>
