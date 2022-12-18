@@ -20,14 +20,22 @@
     src: url("/fonts/Inter-SemiBold.ttf") format(truetype);
 }
 
+:root {
+    font-family: "Inter Semi";
+}
+
 body {
     margin: 0px;
-    max-width: 100%;
 }
 
 .navigation-box {
     display: flex;
     align-items: center;
+
+}
+
+.logo-header .navigation-box {
+    position: sticky;
 }
 
 
@@ -41,11 +49,20 @@ ul li {
        margin: 10px;
 }
 
-nav {
+nav,
+.activities-specific-page-3,
+.yellow-background,
+.yellow-background-2,
+footer,
+.button, 
+.button-infopage   {
     background: #FBCF0E;
-    width: 500px;
+}
+
+nav {
+    width: 100%;
     padding:25px;
-    margin-left: 10px;
+    flex: 100%;
 }
 
 a {
@@ -54,9 +71,7 @@ a {
     margin: 15px;
  }
 
-.activities-specific-page-3 {
-    background: #FBCF0E;
- }
+
 
 .exhibitions-3 {
  margin: 15px;
@@ -68,7 +83,6 @@ a {
  
  ul {
      list-style: none;
-     padding: 20px;
      flex-direction: column;
  }
 
@@ -76,7 +90,7 @@ a {
     font-weight: 1000;
  }
 
-/* HAMBURGER MENU START */ /* https://www.youtube.com/watch?v=kNiic1CaXrQ */
+/* HAMBURGER MENU START */ /* https://noroff-content.gitlab.io/feu/html-css/navigation.html*/
 
 nav, #menu-checkbox { 
     display: none;
@@ -88,15 +102,12 @@ nav, #menu-checkbox {
 
 .hamburger-icon {
     font-size: 30px;
-    padding: 20px;
+    padding: 30px;
 }
+
 
 
 /* HAMBURGER MENU END */
-
-.yellow-background {
-    background: #FBCF0E;
-}
 
 .yellow-background h2 {
     padding-top: 24px;
@@ -115,38 +126,37 @@ nav, #menu-checkbox {
 }
 
 /* HEADER START */
+
 header {
     background-color: #E8E8E8;
     align-items: center;
     justify-content: space-between;
-    display: flex;
     position: relative;
+    width: 100%;
 }
 
+.navigation-box nav {
+    display: 100%;
+}
 /** HEADER & HAMBURGER MENU IN MOBILE VIEW **/
 
-@media (min-width: 955px) {
+@media (min-width: 685px) {
     
- nav {
-    display: block;
-     /** INGEN EFFEKT I BROWSER **/
- }
-
-.hamburger-icon {
-    display: none;
+.logo-and-navbar {
+    display: flex;
 }
 
 }
 
-@media (max-width:600px) {
+@media (max-width:490px) {
+    .logo-and-navbar,
     .logo-header {
         flex-direction: column;
     }
 
-   .logo-header h1 {
-    margin-left: 30px;
-    margin-bottom: 10px;
-   }
+    .activities-frontpage {
+    padding-top: 280px;
+}
 }
 
 /* HEADER END*/
@@ -155,12 +165,12 @@ header {
 
 .opening-hours {
     display: flex;
-    flex-direction: column;
-    margin-left: 12px;
+    flex-direction: column; 
 }
 
 .opening-hours-list {
     flex-direction: column;
+    padding: 0px;
 }
 
 .opening-hours-list li {
@@ -169,8 +179,7 @@ header {
 }
 
 .location-address {
-    margin-left: 95px;
-    padding-top: 60px;
+    gap: 5rem;
     flex: 1;
 }
 
@@ -188,29 +197,63 @@ header {
  padding-top: 20px;
 }
 
+.location-and-logo {
+    display: flex;
+}
+
 .footer-content { 
  display: flex;
  flex: 1;
+ gap: 3rem;
 }
 
 footer {
     display: flex;
     flex: 1;
-    background-color: #FBCF0E;
     padding: 35px;  
     gap: 5em;
 
 }
 
-.logo-footer {
+.logo-footer-specific {
+    width: 40px;
+}
+
+.opening-hours ul li {
+    line-height: 17px;
+    padding-top: 0px;
+}
+
+.logo-footer-specific {
     width: auto;
     height: 65px;
     margin-top: 170px;
     margin-right: 60px;
 }
 
+
 h4 {
     margin-bottom: -3px;
+}
+
+@media (max-width:615px) {
+    .location-and-logo {
+
+    }
+
+    .logo-footer {
+        position: absolute;
+    }
+
+    .logo-footer-specific {
+        position: relative;
+        margin-left: 150px;
+        width: 50px;
+    }
+
+    .footer-content {
+        gap: 0px;
+    }
 }
 
 @media (max-width:890px) {
@@ -229,7 +272,6 @@ h4 {
 
 }
 
-/* LOGO MÅ VÆRE RESPONSIV */
 @media (max-width:635px) {
 
     footer {
@@ -262,31 +304,59 @@ h1, h4, .button a {
     font-family: "Inter Semi Bold";
 }
 
-p, li, a {
+p, 
+li, 
+a {
     font-family: "Inter Regular";
 }
 
 .photo-caption, 
 h2, 
-h3 {
+h3,
+.highlighted-text-frontpage,
+.highlighted-text  {
     font-family: "Poetsen One";
 }
 
 .button,
 .active, 
-.button-infopage,
-.highlighted-text  {
+.button-infopage {
     font-family: "Inter Bold";
+    margin: auto;
+}
+
+.frontpage-activities div, 
+.content-wrapper div,
+nav,
+.hamburger-icon, 
+.location-address,
+input .button, 
+.logo-and-navbar > * {
+    margin: auto;
+}
+
+
+.button, 
+.button-infopage,
+h2, 
+.frontpage-activities div,
+.content-wrapper div,
+.white-container-2,
+.yellow-background,
+.footer-content ul li,
+.location-address   { 
+width: fit-content;
 }
 
 .button, .button-infopage {
-    background-color: #FBCF0E;
     padding: 5px 15px;
     border: solid;
     border-width: 2px;
     text-align: center;
     margin: 20px 51px;
-    width: fit-content;
+}
+
+.button {
     margin: auto;
 }
 
@@ -298,24 +368,20 @@ h2 {
     margin-left: 43px;
     margin-top: 0;
     padding-top: 20px;
-    width: fit-content;
 }
 
-/** Bildetekst på hjemmeside, aktivitetsside og infoside **/
 h3, .photo-caption {
     font-size: 20px;
 }
 
 img {
-    width: 100%; /** A GLOBAL STYLE? */
+    width: 100%; 
     border-radius: 10px;
 }
 
-
-
-/** Grønn bakgrunn på hjemmeside med særegen padding-bottom **/
-
-.activities-frontpage, .activities-specific-page {
+.activities-frontpage, 
+.activities-specific-page,
+.contact-container {
     background-color: #3FA752;
 }
 
@@ -337,7 +403,7 @@ img {
 .frontpage-activities, 
 .content-wrapper, 
 .activities-specific-page,
-.info_content {
+.info-content {
     display: flex;
     grid-gap: 2rem;
     
@@ -351,10 +417,12 @@ main .content-wrapper,
     padding: 20px 20px 40px;
 }
 
-.yellow-background-2,
-.contact-container 
- {
-    margin-top: 80px;
+
+
+.contact-form-content, 
+.contact-form-specific,
+body {
+ max-width: 100%;
 }
  
 /** 1 - HOMEPAGE START **/
@@ -376,8 +444,19 @@ main .content-wrapper,
 
 @media (max-width:850px) {
     
-    .content-wrapper {
+    .content-wrapper,
+    .interactive-text,
+    .frontpage-activities {
         flex-direction: column;
+    }
+
+    .interactive-text p {
+        padding: 0px 100px 50px;
+    }
+}
+
+@media (max-width:500px) {
+    .white-container {
     }
 }
 
@@ -385,12 +464,10 @@ main .content-wrapper,
     background-color: #fff;
     padding: 50px 200px;
     text-align: center;
+    margin-top: 40px;
 }
 
-.frontpage-activities div, .content-wrapper div {
-    width: fit-content;
-    margin: auto;
-}
+
 
 .frontpage-activities img {
     margin-bottom: 13px;
@@ -403,7 +480,7 @@ main .content-wrapper,
 }
 
 .activities-frontpage {
-    padding-bottom: 100px;
+    padding-bottom: 75px;
 }
 
 /** 1 - HOMEPAGE END **/
@@ -412,11 +489,6 @@ main .content-wrapper,
 
 .exhibitions, .exhibition-section > div, .content-wrapper > *  {
     flex: 1;
-}
-
-
-.white-container-2 {
-    width: fit-content;
 }
 
 .white-container-2,
@@ -434,12 +506,16 @@ main .content-wrapper,
     margin-bottom: 20px;
 }
 
+.white-container-activities-page div {
+    padding: 10px;
+}
+
 
 .white-container-2 > img {
     aspect-ratio: 2;
 }
 
-.activities_content-2 div {
+.activities-content-2 div {
     display: flex;
 }
 
@@ -456,17 +532,17 @@ div > button {
     margin-top:100px;
 }
 
-.activities_content2 {
+.activities-content2 {
 display: flex;
 padding-bottom:100px;
 }
 
-.activities_content2 > {
+.activities-content2 > {
     flex: 50%;
 }
 
 
-.exhibitions, .activities_content-2 {
+.exhibitions, .activities-content-2 {
     display: flex;
 }
 
@@ -490,13 +566,17 @@ padding-bottom:100px;
 .info-text {
     display: flex;
     padding: 15px 120px;
-    gap: 20rem;
+    gap: 10rem;
     
+}
+
+.info-content-opening-hours ul {
+    padding: 20px;
 }
 
 .map {
     display: flex;
-    padding-left: 50px;
+    padding: 35px;
 }
 
 .info-text section {
@@ -508,39 +588,45 @@ padding-bottom:100px;
 }
 
 .yellow-background {
-    background-color: #FBCF0E;
     border-radius: 10px;
     margin: 40px;
     padding: 40px;
-    height: fit-content;
 }
 
-.highlighted-text {
-    font-size: 25px; /** REPETERENDE STIL **/
-}
-
-.opening-hours_info-page {
-    width: 418px;
+.info-content-opening-hours {
     flex: 100%;
-    padding-right: 50px;
 }
 
-.info_content {
+.highlighted_text { 
+padding-left: 45px;
+font-size: 25px; /* rep stil */
+}
+
+.highlighted-text-frontpage {
+    font-size: 25px;
+}
+
+.info-content {
     align-items: center;
+    gap: 6rem;
 }
 
-.info_content > .yellow-background {
+.info-content > .yellow-background {
     margin: 0px;
 }
 
 
-.info_content h3 {
-    width: 146px;
+.info-content h3 {
     position: absolute;
     margin-left: 33px;
     margin-top: 3px;
 }
 
+.info-content-2 {
+    display: flex;
+    align-items: center;
+    flex: 100%;
+}
 
 .info-text > .info-text-1-section  { /** DÅRLIG SKREVET - ENDRE? **/
     padding-bottom: 40px;
@@ -550,16 +636,49 @@ padding-bottom:100px;
     padding-bottom: 13px;
 }
 
-.yellow-background-2 {
-    background-color: #FBCF0E;
-    padding-bottom: 50px;
+.info-content-address ul li {
+    font-family: "Inter Bold";
+    font-size:x-large;
+}
+
+.info-content-address {
+    flex: 100%;
+}
+
+@media (max-width: 1010px) {
+
+   .info-content {
+    flex-direction: column;
+    gap: 0rem;
+   }
+
+    .info-content-2 {
+    }
+
+    .map {
+       width: 90%;
+        
+    }
+
+    .info-text {
+        gap: 5rem;
+    }
+   
+}
+
+@media (max-width:650px) {
+    .info-text {
+        display: block;
+        padding: 10px;
+    }
+
+    .white-container {
+        padding: 50px 100px;
+    }
+
 }
 
 /** 4 - CONTACT PAGE START **/
-
-.contact-container {
-    background-color: #3FA752;
-}
 
 .contact-container main {
     position: relative;
@@ -596,15 +715,10 @@ select, .contact-box {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 100%;
 }
 
 .contact-form-content h2 {
     margin-left: 0px;
-}
-
-.contact-form-specific {
-   max-width: 100%;
 }
 
 @media (max-width: 405px) {
@@ -625,8 +739,4 @@ select, .contact-box {
     
 }
 
-
-/** 4 - CONTACT PAGE END **/
-
-
-
+/** 4 - CONTACT PAGE END **/    
