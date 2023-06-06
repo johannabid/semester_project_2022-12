@@ -1,4 +1,4 @@
-# 2022-12-18_SEMESTER_PROJECT_Johanna-Bidtnes
+# Semester project 1
 
 # Community Science Museum
 
