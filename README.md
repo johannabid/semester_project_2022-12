@@ -26,13 +26,11 @@ git https://github.com/johannabid/semester_project_2022-12.git
 
 ### Running
 
-This project contains only static files, so it will pretty much run on all devices. Just go into the root folder where you cloned this repo, and double click on index.html to run the file in your browser.
+This project contains only static files, so it will pretty much run on all devices. Just go into the root folder where you cloned this repo, and double click on index.html to run the file live in your browser.
 
 ## Contributing
 
-No contributions have been added on the school project.
-
-Our main goal was to establish respective sites and completing a checkout process for one product. That's the reason why only one project leads to the check out, which is Scott Shell Woman.
+No contributions have been added to the school project.
 
 ## Contact
 
